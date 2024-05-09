@@ -10,6 +10,11 @@ Welcome to your new app.
     string output = "Gebühren für übergroßes Gepäck";
 }
 <p>@output</p>
+@{
+    string output1 = "<p>this is a paragraph</p>";
+}
+@* @Html.Raw(output1) *@
+@((MarkupString)output1)
 
 
 <SurveyPrompt Title="How is Blazor working for you?" />
